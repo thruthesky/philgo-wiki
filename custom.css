@@ -16,3 +16,59 @@
 #content .firstHeading {
     color:orange;
 }
+
+/** Layout **/
+
+#content.mw-body {
+    margin-left:0;
+}
+
+/* head */
+
+#mw-head #left-navigation {
+    margin-left:0;
+}
+
+
+#p-logo {
+    display:none;
+}
+
+/** Bottom Navigator **/
+
+/** -- Remove 'Tools' Text -- **/
+div#mw-panel div.portal h3 {
+    display:none;
+}
+#mw-navigation #mw-panel {
+    position:relative;
+    top:0;
+    width:auto;
+    font-size:1.2em;
+}
+#mw-panel #p-navigation {
+    float:left;
+    width:7em;
+    height:150px;
+}
+
+div#mw-panel div.portal {
+    float:left;
+    width:8em;
+    background-image:none;
+    margin:0;
+    padding:0;
+}
+
+/** -- Remove 'Powered By MediaWiki' Icon -- **/
+div#footer #footer-icons {
+    display:none;
+}
+/** -- Remove 'Copyright' -- **/
+body.ltr div#footer #footer-places {
+    display:none;
+}
+
+div#footer {
+    padding:0;
+}
