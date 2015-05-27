@@ -131,3 +131,8 @@ div#footer {
 .mw-editsection .mw-editsection-visualeditor {
     display:inline;
 }
+
+
+.oo-ui-windowManager-modal > .oo-ui-dialog.oo-ui-window-setup > .oo-ui-window-frame {
+	position:relative!important;
+}
