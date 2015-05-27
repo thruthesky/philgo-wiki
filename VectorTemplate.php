@@ -186,8 +186,8 @@ class VectorTemplate extends BaseTemplate {
 			<div id="mw-head">
 
 				<div id="philgo-logo">
-					<a href="index.php"><img src="http://philgo.com/etc/dokuwiki/lib/tpl/dokuwiki-philgo/images/logo-philgo.png"></a>
-					<div class="philgo-title"><a href="index.php">필리핀 정보 백과</a></div>
+					<a href="/~wiki/index.php/%ED%95%84%EB%A6%AC%ED%95%80_%EC%A0%95%EB%B3%B4_%EB%B0%B1%EA%B3%BC"><img src="http://philgo.com/etc/dokuwiki/lib/tpl/dokuwiki-philgo/images/logo-philgo.png"></a>
+					<div class="philgo-title"><a href="/~wiki/index.php/%ED%95%84%EB%A6%AC%ED%95%80_%EC%A0%95%EB%B3%B4_%EB%B0%B1%EA%B3%BC">필리핀 정보 백과</a></div>
 				</div>
 				<?php $this->renderNavigation( 'PERSONAL' ); ?>
 				<div id="left-navigation">
