@@ -99,6 +99,8 @@ div#footer {
 
 /** -- TOC 를 오른쪽에 붙임 -- **/
 #toc {
+    position:relative;
+    top:-6em;
     float:right;
 }
 
