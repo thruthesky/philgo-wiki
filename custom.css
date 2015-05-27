@@ -96,3 +96,27 @@ body.ltr div#footer #footer-places {
 div#footer {
     padding:0;
 }
+
+/** -- TOC 를 오른쪽에 붙임 -- **/
+#toc {
+    float:right;
+}
+
+
+/** -- 소스 수정을 없앰 -- **/
+
+#ca-edit {
+    display:none;
+}
+
+
+.mw-editsection .mw-editsection-divider {
+    display: none;
+}
+
+.mw-editsection a {
+    display:none;
+}
+.mw-editsection .mw-editsection-visualeditor {
+    display:inline;
+}
