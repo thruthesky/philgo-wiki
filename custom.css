@@ -17,6 +17,14 @@
     color:orange;
 }
 
+#content.mw-body h1,
+#content.mw-body h2,
+#content.mw-body h3 {
+    line-height: 160%;
+    margin:1em 0;
+    padding: 6px 0 6px;
+}
+
 /** Layout **/
 
 #content.mw-body {
@@ -99,8 +107,6 @@ div#footer {
 
 /** -- TOC 를 오른쪽에 붙임 -- **/
 #toc {
-    position:relative;
-    top:-6em;
     float:right;
 }
 
