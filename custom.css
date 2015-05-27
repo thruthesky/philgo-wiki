@@ -13,16 +13,19 @@
 }
 
 
-#content .firstHeading {
-    color:orange;
-}
 
-#content.mw-body h1,
-#content.mw-body h2,
-#content.mw-body h3 {
+#content.mw-body #bodyContent h1,
+#content.mw-body #bodyContent h2,
+#content.mw-body #bodyContent h3 {
     line-height: 160%;
     margin:1em 0;
     padding: 6px 0 6px;
+}
+
+#content.mw-body #firstHeading {
+    margin:0;
+    padding:0 0 8px;
+    color:#000066;
 }
 
 /** Layout **/
