@@ -495,8 +495,10 @@ class VectorTemplate extends BaseTemplate {
 							foreach ( $this->data['view_urls'] as $link ) {
 								?>
 								<li<?php
-								echo $link['attributes']
-								?>><span><a href="<?php
+								echo $link['attributes'];
+								if ( strpos($link['attributes'], 'edit') !== false ) $target = "target='blank'";
+								else $target='no-target';
+								?>><span><a <?php echo $target; ?> href="<?php
 										echo htmlspecialchars( $link['href'] )
 										?>" <?php
 										echo $link['key'];
