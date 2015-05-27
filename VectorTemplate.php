@@ -180,9 +180,15 @@ class VectorTemplate extends BaseTemplate {
 			</div>
 		</div>
 		<div id="mw-navigation">
+
 			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
 
 			<div id="mw-head">
+
+				<div id="philgo-logo">
+					<img src="http://philgo.com/etc/dokuwiki/lib/tpl/dokuwiki-philgo/images/logo-philgo.png">
+					<div class="philgo-title">필리핀 정보 백과</div>
+				</div>
 				<?php $this->renderNavigation( 'PERSONAL' ); ?>
 				<div id="left-navigation">
 					<?php $this->renderNavigation( array( 'NAMESPACES', 'VARIANTS' ) ); ?>
