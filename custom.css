@@ -1,0 +1,18 @@
+#content.mw-body,
+#content.mw-body h1,
+#content.mw-body h2,
+#content.mw-body h3,
+#content.mw-body h4,
+#content.mw-body td,
+#content.mw-body span,
+#content.mw-body a,
+#content.mw-body p,
+#content.mw-body div
+{
+    font-family: 'Malgun Gothic', serif;
+}
+
+
+#content .firstHeading {
+    color:orange;
+}

@@ -33,7 +33,10 @@
 				},
 				"screen-hd.less": {
 					"media": "screen and (min-width: 982px)"
-				}
+				},
+              "custom.css": {
+                "media": "screen"
+              }
 			}
 		},
 		"skins.vector.js": {
