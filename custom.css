@@ -30,9 +30,33 @@
 }
 
 
+/** 로고 변경 **/
 #p-logo {
     display:none;
 }
+
+
+#philgo-logo {
+    position:absolute;
+    z-index: 12345;
+    padding:0.4em;
+    width:16em;
+    font-size:14pt;
+    font-family: 'Malgun Gothic', serif;
+}
+
+#philgo-logo img {
+    display:block;
+    float:left;
+    margin-right:0.8em;
+    width:32px;
+    height:auto;
+}
+
+#philgo-logo .philgo-title {
+    padding-top:0.4em;
+}
+
 
 /** Bottom Navigator **/
 
