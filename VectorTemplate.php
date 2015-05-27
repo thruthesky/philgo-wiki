@@ -186,8 +186,8 @@ class VectorTemplate extends BaseTemplate {
 			<div id="mw-head">
 
 				<div id="philgo-logo">
-					<img src="http://philgo.com/etc/dokuwiki/lib/tpl/dokuwiki-philgo/images/logo-philgo.png">
-					<div class="philgo-title">필리핀 정보 백과</div>
+					<a href="index.php"><img src="http://philgo.com/etc/dokuwiki/lib/tpl/dokuwiki-philgo/images/logo-philgo.png"></a>
+					<div class="philgo-title"><a href="index.php">필리핀 정보 백과</a></div>
 				</div>
 				<?php $this->renderNavigation( 'PERSONAL' ); ?>
 				<div id="left-navigation">
@@ -495,10 +495,8 @@ class VectorTemplate extends BaseTemplate {
 							foreach ( $this->data['view_urls'] as $link ) {
 								?>
 								<li<?php
-								echo $link['attributes'];
-								if ( strpos($link['attributes'], 'edit') !== false ) $target = "target='blank'";
-								else $target='no-target';
-								?>><span><a <?php echo $target; ?> href="<?php
+								echo $link['attributes']
+								?>><span><a href="<?php
 										echo htmlspecialchars( $link['href'] )
 										?>" <?php
 										echo $link['key'];

@@ -50,7 +50,6 @@
 #philgo-logo {
     position:absolute;
     z-index: 12345;
-    padding:0.4em;
     width:16em;
     font-size:14pt;
     font-family: 'Malgun Gothic', serif;
@@ -133,6 +132,7 @@ div#footer {
 }
 
 
+/** -- 중요: iframe 에서 글 수정을 하면, 저장 할 때, 저장 확인 팝업 창이 프레임 중간에 떠서 찾기가 어려운에 맨 위로 올린다. -- **/
 .oo-ui-windowManager-modal > .oo-ui-dialog.oo-ui-window-setup > .oo-ui-window-frame {
 	position:relative!important;
 }
