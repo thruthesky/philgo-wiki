@@ -110,7 +110,7 @@ div#footer {
 /** -- TOC 를 position:absolute 로 오른쪽 위에 붙임. 따라서 오른쪽 위 여백이 필요함. -- **/
 #toc {
     position: absolute;
-    top:-1em;
+    top:-3em;
     right:0;
 }
 
