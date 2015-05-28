@@ -107,9 +107,20 @@ div#footer {
     padding:0;
 }
 
-/** -- TOC 를 오른쪽에 붙임 -- **/
+/** -- TOC 를 position:absolute 로 오른쪽 위에 붙임. 따라서 오른쪽 위 여백이 필요함. -- **/
 #toc {
-    float:right;
+    position: absolute;
+    top:-1em;
+    right:0;
+}
+
+#mw-content-text > p:first-child {
+    margin-right:240px;
+    //background-color:#0025fe;
+}
+#mw-content-text > p:nth-child(2) {
+    margin-right:240px;
+    //background-color:orange;
 }
 
 

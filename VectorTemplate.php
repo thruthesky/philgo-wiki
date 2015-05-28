@@ -107,6 +107,7 @@ class VectorTemplate extends BaseTemplate {
 				echo $this->getIndicators();
 			}
 			?>
+
 			<h1 id="firstHeading" class="firstHeading" lang="<?php
 			$this->data['pageLanguage'] =
 				$this->getSkin()->getTitle()->getPageViewLanguage()->getHtmlCode();
@@ -260,6 +261,8 @@ class VectorTemplate extends BaseTemplate {
 			<div style="clear:both"></div>
 		</div>
 		<?php $this->printTrail(); ?>
+
+
 
 	<script>
 		var $ = jQuery;
