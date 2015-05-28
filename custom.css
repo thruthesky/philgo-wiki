@@ -136,3 +136,12 @@ div#footer {
 .oo-ui-windowManager-modal > .oo-ui-dialog.oo-ui-window-setup > .oo-ui-window-frame {
 	position:relative!important;
 }
+
+
+/** -------------------------- 본문 -------------------------------- **/
+#content.mw-body #bodyContent a {
+    color:#0033f0;
+}
+#content.mw-body #bodyContent a:hover {
+    color:#DF0022;
+}
