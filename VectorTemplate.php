@@ -190,7 +190,9 @@ class VectorTemplate extends BaseTemplate {
 					<a href="/~wiki/index.php/%ED%95%84%EB%A6%AC%ED%95%80_%EC%A0%95%EB%B3%B4_%EB%B0%B1%EA%B3%BC"><img src="http://philgo.com/etc/dokuwiki/lib/tpl/dokuwiki-philgo/images/logo-philgo.png"></a>
 					<div class="philgo-title"><a href="/~wiki/index.php/%ED%95%84%EB%A6%AC%ED%95%80_%EC%A0%95%EB%B3%B4_%EB%B0%B1%EA%B3%BC">필리핀 정보 백과</a></div>
 				</div>
-				<?php $this->renderNavigation( 'PERSONAL' ); ?>
+				<div id="ad-top-right">
+				  <a href="http://www.philgo.net" target="_blank"><span class="caption">필리핀 여권 비자 사업 컨설팅 </span>문의 : 070-7529-1749</a>
+				</div>
 				<div id="left-navigation">
 					<?php $this->renderNavigation( array( 'NAMESPACES', 'VARIANTS' ) ); ?>
 				</div>
@@ -208,6 +210,7 @@ class VectorTemplate extends BaseTemplate {
 			</div>
 		</div>
 		<div id="footer" role="contentinfo"<?php $this->html( 'userlangattributes' ) ?>>
+		<?php $this->renderNavigation( 'PERSONAL' ); ?>
 			<?php
 			foreach ( $this->getFooterLinks() as $category => $links ) {
 				?>
