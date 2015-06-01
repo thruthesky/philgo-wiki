@@ -151,8 +151,8 @@ class VectorTemplate extends BaseTemplate {
 				<?php $this->html( 'bodycontent' ) ?>
 				<a id="ad-bottom-a" href="http://www.philgo.net/" target="_blank">
       <div id="ad-bottom">
-        <div class="line1">필고 컨설턴시 www.philgo.net</div>
-        <div class="line4">정직과 신뢰로 고객의 믿음에 보답하겠습니다.</div>
+        <div class="line1"><b>필고 컨설턴시</b> www.philgo.net</div>
+        <div class="line4"><b>정직</b>과 <b>신뢰</b>로 고객의 믿음에 보답하겠습니다.</div>
         <div class="line3">한국 070-7893-1741, 필리핀: 045-322-4133</div>
         <div class="line2">여권, 비자, 법인설립(SEC, BIR), 세무, 회계, 법률 &amp; 변호사 서비스, 의료보험, 자동차보험, 헬퍼, 튜터, 운전기사, 경비 등 각종 편의 서비스</div>
       </div>
