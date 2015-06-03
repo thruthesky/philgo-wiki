@@ -45,7 +45,7 @@
 }
 
 
-/** 로고 변경 **/
+/** --------------------- LOGO -------------------- **/
 #p-logo {
     display:none;
 }
@@ -72,7 +72,7 @@
 }
 
 
-/** ------------------------------ 오른쪽 상단 광고 ---------------------------- **/
+/** ------------------------------ ADVERTISEMENT on Top Right ---------------------------- **/
 #ad-top-right {
     position:absolute;
     top:.5em;
@@ -102,7 +102,7 @@
 }
 
 
-/** ------------------------------ 로그인 정보를 맨 아래로 내림 ---------------------------------- **/
+/** ------------------------------ Put Loing Info at Bottom ---------------------------------- **/
 #footer #p-personal {
     position: static;
     top:0;
@@ -117,7 +117,7 @@
 
 
 
-/** ------------------------ 하단 부분 ; footer --------------------------------- **/
+/** ------------------------ FOOTER ; footer --------------------------------- **/
 @media screen and (min-width: 982px) {
     div#footer {
         padding:0!important;
@@ -164,7 +164,7 @@ div#footer {
     padding:0;
 }
 
-/** -- TOC 를 position:absolute 로 오른쪽 위에 붙임. 따라서 오른쪽 위 여백이 필요함. -- **/
+/** ----- Place TOC on TOP RIGHT ( position:absolute ). It needs space on TOP RIGHT for TOC ------ **/
 #toc {
     position: absolute;
     top:-3em;
@@ -200,13 +200,14 @@ div#footer {
 }
 
 
-/** -- 중요: iframe 에서 글 수정을 하면, 저장 할 때, 저장 확인 팝업 창이 프레임 중간에 떠서 찾기가 어려운에 맨 위로 올린다. -- **/
+
+/** ------- Put Save Confirmation Box on Top of the Page. Especially It is used in IFrame -------- **/
 .oo-ui-windowManager-modal > .oo-ui-dialog.oo-ui-window-setup > .oo-ui-window-frame {
 	position:relative!important;
 }
 
 
-/** -------------------------- 본문 -------------------------------- **/
+/** -------------------------- COTNENT -------------------------------- **/
 #content.mw-body #bodyContent a {
     color:#0033f0;
 }
