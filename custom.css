@@ -181,8 +181,8 @@ div#footer {
 }
 
 
-/** -- 소스 수정을 없앰 -- **/
-
+/** ------- Hide Source Edit ----- **/
+/*
 #ca-edit {
     display:none;
 }
@@ -198,7 +198,7 @@ div#footer {
 .mw-editsection .mw-editsection-visualeditor {
     display:inline;
 }
-
+*/
 
 
 /** ------- Put Save Confirmation Box on Top of the Page. Especially It is used in IFrame -------- **/
