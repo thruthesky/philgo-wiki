@@ -219,3 +219,15 @@ div#footer {
 #content.mw-body #bodyContent a:hover {
     color:#DF0022;
 }
+
+
+
+/** ------------------------------- FRONT PAGE CUSTOMIZING -------------------------------- **/
+.page-Home {
+
+}
+.page-Home .firstHeading,
+.page-Home .mw-redirectedfrom,
+.page-Home #contentSub {
+    display:none;
+}
