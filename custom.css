@@ -165,12 +165,12 @@ div#footer {
 }
 
 /** ----- Place TOC on TOP RIGHT ( position:absolute ). It needs space on TOP RIGHT for TOC ------ **/
+/*
 #toc {
     position: absolute;
     top:-3em;
     right:0;
 }
-
 #mw-content-text > p:first-child {
     margin-right:240px;
     //background-color:#0025fe;
@@ -179,6 +179,7 @@ div#footer {
     margin-right:240px;
     //background-color:orange;
 }
+*/
 
 
 /** ------- Hide Source Edit ----- **/
