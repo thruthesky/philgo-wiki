@@ -66,7 +66,7 @@ function show_search_result(array &$arr, $q) {
 	}
 	if ( empty($res) ) echo "ATTENTION: No Immigration Field Office/District Office/One stop office handles '$q', but Bureau of Immigration Head Office may handle it.<br>알림: '$q' 와 관련된 업무를 처리하는 분소가 없습니다. 어쩌면, 마닐라의 이민국 본청에서 처리를 할 수 있습니다.";
 	else {
-		echo "<h2>$q 업무를 담당 하는 곳</h2>";
+		if ( ! isset($_GET['title']) ) echo "<h2>$q 업무를 담당 하는 곳</h2>";
 		echo "<ul>";
 		foreach ( $res as $office ) {
 			echo "<li>$office</li>";
@@ -117,7 +117,8 @@ EOH;
 }
 function show_footer()
 {
-	echo "
+$copyright = "
+
 		<footer>
 			
 			<a href='http://wiki.philgo.com'>본 저보는 필리핀 정보 백과에 의해서 제공됩니다.<br>
@@ -125,6 +126,9 @@ function show_footer()
 			http://wiki.philgo.com</a>
 			
 		</footer>
+";
+	if ( ! isset($_GET['title']) ) echo $copyright;
+	echo "
 	</body>
 </html>";
 }
