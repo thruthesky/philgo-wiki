@@ -7,7 +7,9 @@
 		
 			search-directory.php 로만 접속하면 전체 정보를 표시한다.
 			
-		- 검색 표시
+		- 검색 표시.
+		
+			( 중요: 검색어는 가능하면 전체 업무 문장을 다 기록하는 것이 좋다. )
 		
 			search-directory.php?q=ecc 와 같이
 		
@@ -18,10 +20,14 @@
 	@사용 예제
 	
 		- 학생 비자 변경(신청)
-		http://work.org/mediawiki2/skins/Vector/search-directory.php?q=Conversion to Student Visa
+		http://wiki.philgo.com/skins/Vector/search-directory.php?q=Conversion to Student Visa
+		
 		
 		- 학생 비자 연장
-		http://work.org/mediawiki2/skins/Vector/search-directory.php?q=Extension of Student Visa
+		http://wiki.philgo.com//Vector/search-directory.php?q=Extension of Student Visa
+		
+	@중요
+		이민국 문서가 변경되면 같이 변경을 해야 한다.
  
  */
 $directory = getDirectory();
@@ -94,8 +100,8 @@ function show_header()
 		<meta charset='UTF-8'>
 		<style>
 			body {
-				margin:10px;
-				padding:10px;
+				margin:0;
+				padding:0;
 				font-size:10pt;
 				font-family:'Malgun Gothic',Arial;
 				line-height:180%;
