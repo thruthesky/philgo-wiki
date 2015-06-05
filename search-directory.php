@@ -26,6 +26,11 @@
 		- 학생 비자 연장
 		http://wiki.philgo.com//Vector/search-directory.php?q=Extension of Student Visa
 		
+		- 제목과 꼬리말을 없애는 방법
+		
+			/search-directory.php?q=Extension%20of%20Student%20Visa&title=no&copyright=no
+			
+		
 	@중요
 		이민국 문서가 변경되면 같이 변경을 해야 한다.
  
@@ -72,6 +77,9 @@ function show_search_result(array &$arr, $q) {
 			echo "<li>$office</li>";
 		}
 		echo "</ul>";
+		echo "알림: 이민국분소에서 하는 대부분의 업무는 마닐라 이민국 본청에서 처리 할 수 있습니다.";
+		
+		
 	}
 }
 
