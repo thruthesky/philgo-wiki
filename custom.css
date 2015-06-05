@@ -29,6 +29,8 @@
     color:#000066;
 }
 
+
+
 /** Layout **/
 
 
@@ -45,6 +47,22 @@
 }
 
 
+
+/* ---------------------------------- C O M P O N E N T -------------------------------------- */
+
+/** Delete Gradient on Top **/
+#mw-page-base {
+    background-image: none;
+}
+
+/** Give space on Top **/
+#mw-page-base {
+    height:6em;
+}
+#left-navigation, #right-navigation {
+    margin-top:3.5em;
+}
+
 /** --------------------- LOGO -------------------- **/
 #p-logo {
     display:none;
@@ -53,6 +71,8 @@
 
 #philgo-logo {
     position:absolute;
+    top:0.4em;
+    left:0.4em;
     z-index: 12345;
     width:16em;
     font-size:14pt;
@@ -75,8 +95,8 @@
 /** ------------------------------ ADVERTISEMENT on Top Right ---------------------------- **/
 #ad-top-right {
     position:absolute;
-    top:.5em;
-    right:0.4em;
+    top:0.9em;
+    right:0.6em;
     font-family: "Malgun Gothic", AppleGothic, Gulim, serif;
 }
 @media all and (max-width: 600px) {
@@ -99,6 +119,30 @@
 }
 #ad-bottom-a:hover {
     text-decoration: none;
+}
+
+/** Search **/
+div#simpleSearch {
+    padding:0.1em 0.4em 0.1em;
+    border: solid 1px #BBBDBD;
+    background-image: none;
+    width:12em;
+}
+
+@media all and (min-width: 600px) {
+    div#simpleSearch {
+        width:16em;
+    }
+}
+@media all and (min-width: 800px) {
+    div#simpleSearch {
+        width:20em;
+    }
+}
+@media all and (min-width: 960px) {
+    div#simpleSearch {
+        width:30em;
+    }
 }
 
 
