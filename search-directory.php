@@ -106,6 +106,10 @@ function show_header()
 				font-family:'Malgun Gothic',Arial;
 				line-height:180%;
 			}
+			h1, h2, h3 {
+				margin:0;
+				padding:0;
+			}
 		</style>
 	</head>
 	<body>
