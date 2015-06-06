@@ -30,6 +30,12 @@
 		
 			/search-directory.php?q=Extension%20of%20Student%20Visa&title=no&copyright=no
 			
+		- 영어 표시 옵션
+			lang=en
+		- 설명 표시 옵션
+			desc=no
+			
+			
 		
 	@중요
 		이민국 문서가 변경되면 같이 변경을 해야 한다.
@@ -53,7 +59,10 @@ foreach ( $lines as $line ) {
 
 show_header();
 if ( isset($_GET['q']) ) {
-	show_search_result($arr, $_GET['q']);
+	if ( $_GET['q'] == 'how to use' ) {
+		show_how_to_use();
+	}
+	else show_search_result($arr, $_GET['q']);
 }
 else show_all($arr);
 show_footer();
@@ -73,13 +82,15 @@ function show_search_result(array &$arr, $q) {
 	else {
 		if ( ! isset($_GET['title']) ) echo "<h2>$q 업무를 담당 하는 곳</h2>";
 		echo "<ul>";
+		echo "<li><b>Bureau of Immigration Head Office</b> <b style='color:blue;'>may</b> handle the task</li>";
 		foreach ( $res as $office ) {
 			echo "<li>$office</li>";
 		}
 		echo "</ul>";
-		echo "알림: 이민국분소에서 하는 대부분의 업무는 마닐라 이민국 본청에서 처리 할 수 있습니다.";
-		
-		
+		if ( ! isset($_GET['desc']) )  {
+			if ( isset($_GET['lang']) && $_GET['lang'] == 'en' ) echo "<div class='note'>Most of task done in Field Office/District Offiice/One stop office can be cone in Bureau of Immigration Head Office.</div>";
+			else echo "<div class='note'>참고: 이민국분소에서 하는 대부분의 업무는 마닐라 이민국 본청에서 처리 할 수 있습니다.</div>";
+		}
 	}
 }
 
@@ -96,6 +107,46 @@ function show_all(array &$arr) {
 	}
 }
 
+
+function show_how_to_use()
+{
+echo<<<EOH
+	<h2 class='note' style='margin-top:0; color:white;'>How To Use: Immigration Task Search System</h2>
+	
+	<ul>
+	
+		<li> To see all the list of Immigration Branch(District Office/Field Office/One Stop Office)
+				access below;<br>
+				http://wiki.philgo.com/skins/Vector/search-directory.php
+		</li>
+		<li>
+			To search immigration branch of a task, access like below;<br>
+				http://wiki.philgo.com/skins/Vector/search-directory.php?q=search keyword<br>
+				Where 'search keyword' is the task (or part of the task) you want to search.
+		</li>
+		<li>
+			The 'search keyword' should in full. If you input part of the task like 'Student Visa', then it will list all branch which that handle Student Visa and that is not what you may want.<br>
+			If you want to extend student visa, put 'Extension of Student Visa' instead of 'Student Visa'
+			because Application and Extension of Student Visas are handled in different branch. One branch may only do application and the other may only do extension.
+		</li>
+		<li>
+			Option:
+			<ul>
+				<li>title=no<br>
+					removes title
+				</li>
+				<li>copyright=no<br>
+					removes copyright
+				</li>
+				<li>lang=en<br>
+					display in English only.
+				</li>
+			</ul>
+		</li>
+	</ul>
+	
+EOH;
+}
 
 
 
@@ -118,6 +169,15 @@ function show_header()
 				margin:0;
 				padding:0;
 			}
+			a {
+				color:black;
+				text-decoration:none;
+			}
+			.note {
+				margin:0.4em 0;
+				padding: 1em 2em;
+				background-color:#a5c9de;
+			}
 		</style>
 	</head>
 	<body>
@@ -125,13 +185,21 @@ EOH;
 }
 function show_footer()
 {
+
 $copyright = "
 
-		<footer>
+		<footer class='note'>
 			
-			<a href='http://wiki.philgo.com'>본 저보는 필리핀 정보 백과에 의해서 제공됩니다.<br>
+			<a href='http://wiki.philgo.com'>
+			
+				본 정보는 필고 필리핀 정보 백과에 의해서 제공됩니다.<br>
+				This information is provided by 
 			
 			http://wiki.philgo.com</a>
+			
+			<br>
+			
+			<a href='?q=how to use'>How To Use : Click here to know how to use.</a>
 			
 		</footer>
 ";
