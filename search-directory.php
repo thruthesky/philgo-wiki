@@ -82,7 +82,7 @@ function show_search_result(array &$arr, $q) {
 	else {
 		if ( ! isset($_GET['title']) ) echo "<h2>$q 업무를 담당 하는 곳</h2>";
 		echo "<ul>";
-		echo "<li><b>Bureau of Immigration Head Office</b> <b style='color:blue;'>may</b> handle the task</li>";
+		//echo "<li><b>Bureau of Immigration Head Office</b> <b style='color:blue;'>may</b> handle the task</li>";
 		foreach ( $res as $office ) {
 			echo "<li>$office</li>";
 		}
