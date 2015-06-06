@@ -90,6 +90,11 @@ function show_search_result(array &$arr, $q) {
 		if ( ! isset($_GET['desc']) )  {
 			if ( isset($_GET['lang']) && $_GET['lang'] == 'en' ) echo "<div class='note'>Most of task done in Field Office/District Offiice/One stop office can be cone in Bureau of Immigration Head Office.</div>";
 			else echo "<div class='note'>참고: 이민국분소에서 하는 대부분의 업무는 마닐라 이민국 본청에서 처리 할 수 있습니다.</div>";
+
+			echo "<div class='note'>
+&lt;iframe name="document" width='100%' height='4096'  src="http://phildic.org/skins/Vector/search-directory.php?q=$_GET[q]&title=no&copyright=no&lang=en&desc=no">&lt;/iframe>
+</div>";
+
 		}
 	}
 }
