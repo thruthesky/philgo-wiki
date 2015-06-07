@@ -275,3 +275,11 @@ div#footer {
 .page-Home #contentSub {
     display:none;
 }
+
+
+/** -------------------------- I F R A M E ---------------------------------- **/
+.iframe #mw-navigation { display: none!important; }
+.iframe #mw-page-base { display: none; }
+.iframe #footer { display: none; }
+.iframe #ad-bottom-a { display:none; }
+.iframe .mw-body { border:0; }

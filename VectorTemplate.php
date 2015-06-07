@@ -90,6 +90,7 @@ class VectorTemplate extends BaseTemplate {
 		// Output HTML Page
 		$this->html( 'headelement' );
 		?>
+		<?php if ( isset($_GET['class']) ) {?><!--class-wrapper--><div class="<?php echo $_GET['class']?>"><?}?>
 		<div id="mw-page-base" class="noprint"></div>
 		<div id="mw-head-base" class="noprint"></div>
 		<div id="content" class="mw-body" role="main">
@@ -273,7 +274,7 @@ class VectorTemplate extends BaseTemplate {
 		</div>
 		<?php $this->printTrail(); ?>
 
-
+</div><!--/class-wrapper-->
 
 	<script>
 		var $ = jQuery;
