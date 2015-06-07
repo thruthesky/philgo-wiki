@@ -283,3 +283,4 @@ div#footer {
 .iframe #footer { display: none; }
 .iframe #ad-bottom-a { display:none; }
 .iframe .mw-body { border:0; }
+.iframe #toc { display:none; }
