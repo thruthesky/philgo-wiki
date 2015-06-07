@@ -278,9 +278,18 @@ div#footer {
 
 
 /** -------------------------- I F R A M E ---------------------------------- **/
+.iframe #content.mw-body { padding:0; }
+.iframe #mw-content-text h2,
+.iframe #mw-content-text h3,
+.iframe #mw-content-text h4,
+.iframe #mw-content-text h5 { padding: 0; }
+
 .iframe #mw-navigation { display: none!important; }
 .iframe #mw-page-base { display: none; }
 .iframe #footer { display: none; }
 .iframe #ad-bottom-a { display:none; }
 .iframe .mw-body { border:0; }
 .iframe #toc { display:none; }
+.iframe.no-page-title #firstHeading { display:none; }
+.iframe.no-page-title #contentSub { display:none; }
+
