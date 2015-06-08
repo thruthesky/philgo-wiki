@@ -196,7 +196,7 @@ class VectorTemplate extends BaseTemplate {
 			<div id="mw-head">
 
 				<div id="philgo-logo">
-					<a href="/"><img src="skins/Vector/logo-philgo.png"></a>
+					<a href="/"><img src="/skins/Vector/logo-philgo.png"></a>
 					<div class="philgo-title"><a href="/">필리핀 정보 백과</a></div>
 				</div>
 				<div id="ad-top-right">
