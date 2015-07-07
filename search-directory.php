@@ -58,13 +58,16 @@ foreach ( $lines as $line ) {
 }
 
 show_header();
-if ( isset($_GET['q']) ) {
-	if ( $_GET['q'] == 'how to use' ) {
+if ( !empty ($_GET['q']) ) {
+	if ( empty($_GET['q']) || $_GET['q'] == 'how to use' ) {
 		show_how_to_use();
 	}
 	else show_search_result($arr, $_GET['q']);
 }
-else show_all($arr);
+else {
+	show_how_to_use();
+	show_all($arr);
+}
 show_footer();
 
 function show_search_result(array &$arr, $q) {
@@ -102,14 +105,17 @@ function show_search_result(array &$arr, $q) {
 
 
 function show_all(array &$arr) {
+	$count = 0;
 	foreach ( $arr as $key => $sub ) {
 		echo "<h1>$key</h1>";
 		echo "<ul>";
 		foreach ( $sub as $task ) {
+			$count ++;
 			echo "<li>$task</li>";
 		}
 		echo "</ul>";
 	}
+	echo "Number of Immigration branches: $count";
 }
 
 
